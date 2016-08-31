@@ -45,7 +45,3 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {console.log("Connected to database");});
 
 //doing something
-var first_album = new Album({artist: 'abc', album: '123'});
-first_album.save(function (err, first_album) {
-    if (err) return console.error(err);
-});
